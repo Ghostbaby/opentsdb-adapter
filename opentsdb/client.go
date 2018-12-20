@@ -167,7 +167,6 @@ func (c *Client) Write(samples model.Samples) error {
 
 func (c *Client) Read(req *prompb.ReadRequest) (*prompb.ReadResponse, error) {
 	pretty.Println(req)
-	fmt.Printf("=============")
 	queryReqs := make([]*otdbQueryReq, 0, len(req.Queries))
 	smatchers := make(map[*otdbQueryReq]seriesMatcher)
 	for _, q := range req.Queries {
