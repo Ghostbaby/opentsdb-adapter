@@ -32,8 +32,7 @@ import (
 
 	"github.com/go-kit/kit/log/level"
 
-	//"github.com/yueji12321/opentsdb-adapter/prompb"
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/yueji12321/opentsdb-adapter/prompb"
 	"github.com/go-kit/kit/log"
 	"github.com/prometheus/common/model"
 	"golang.org/x/net/context/ctxhttp"
