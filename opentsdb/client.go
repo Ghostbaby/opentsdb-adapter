@@ -403,7 +403,7 @@ func (c *Client) buildQueryReq(q *prompb.Query) (*otdbQueryReq, seriesMatcher, e
 		}
 		qr.Filters = append(qr.Filters, ft)
 	}
-
+	fmt.Printf("********Queries:%s",req.Queries)
 	req.Queries = append(req.Queries, qr)
 	return &req, smatcher, nil
 }
