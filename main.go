@@ -203,8 +203,7 @@ func serve(logger log.Logger, addr string, writers []writer, readers []reader) e
 
 		level.Info(logger).Log("msg", "Start to client read")
 		var resp *prompb.ReadResponse
-		//resp, err = reader.Read(&req)
-		resp, err = reader.Read(&resp)
+		resp, err = reader.Read(&req)
 		if err != nil {
 			level.Warn(logger).Log("msg", "Error executing query", "query", req, "storage", reader.Name(), "err", err)
 			http.Error(w, err.Error(), http.StatusInternalServerError)
