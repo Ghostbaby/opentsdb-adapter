@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/caitong93/opentsdb-adapter/prompb"
+	"github.com/yueji12321/opentsdb-adapter/prompb"
 	"github.com/prometheus/common/model"
 )
 
