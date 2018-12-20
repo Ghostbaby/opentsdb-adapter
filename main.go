@@ -29,8 +29,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
 
-	"github.com/caitong93/opentsdb-adapter/opentsdb"
-	"github.com/caitong93/opentsdb-adapter/prompb"
+	"github.com/yueji12321/opentsdb-adapter/opentsdb"
+	"github.com/yueji12321/opentsdb-adapter/prompb"
 	_ "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	_ "github.com/grpc-ecosystem/grpc-gateway/utilities"
 	"github.com/prometheus/common/promlog"
